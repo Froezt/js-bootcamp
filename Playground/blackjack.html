@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blackjack!</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+
+        <h1 class="title">Win Big!</h1>
+
+        <div class="betAmount">
+            Bet amount: <input id="betAmountInput" type="number">
+            <p class="warning"></p>
+        </div>
+
+        <div class="scores">
+            <p class="dealerScore">0</p>
+            <p class="playerScore">0</p>
+        </div>
+
+        <div class="cardsDealer">
+        </div>
+
+        <div class="cardsPlayer">
+        </div>
+
+
+        <div class="buttons">
+            <button class="hitButton" type="button">Hit</button>
+            <button class="standButton" type="button">Stand</button>
+            <button class="playButton" type="button">Play</button>
+        </div>
+    </div>
+
+    <div class="popupGewonnen">
+        <p class="popupText">Je hebt gewonnen!</p>
+        <button class="okButton" type="button" onclick="reset()">Okay</button>
+    </div>
+
+    <div class="popupGelijkspel">
+        <p class="popupText">Gelijkspel</p>
+        <button class="okButton" type="button" onclick="reset()">Okay</button>
+    </div>
+
+    <div class="popupVerloren">
+        <p class="popupText">Dealer heeft gewonnen</p>
+        <button class="okButton" type="button" onclick="reset()">Okay</button>
+    </div>
+
+    <div class="popupBlackjack">
+        <p class="popupText">Je hebt Blackjack!!!</p>
+        <button class="okButton" type="button" onclick="reset()">Okay</button>
+    </div>
+
+    <p class="money">Money: €1000</p>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
